@@ -38,4 +38,4 @@ typically won't be made over one single cable. Instead the data will travel acro
 many different wires and cables, all inter-connected by switches, routers, and
 other network devices. Each of these elements within the network can be thought of
 as an individual 'link' within the overall system. Transmission delay is the amount
-of time it takes to push the data onto the link. 
+of time it takes to push the data onto the link.
