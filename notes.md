@@ -86,3 +86,21 @@ transfer of messages between applications, but do so in different ways.
 TCP and HTTP would be examples of 2 protocols that address different aspects
 of communication; TCP is the transfer of messages between applications, and
 HTTP the structure of those messages.
+
+# A Layered System
+
+It can be useful to group these protocols together in terms of the particular
+aspect of communication that they address. We can think of those protocol groups
+as functioning within _layers_ of an overall system of communication.
+
+# Protocol Data Units
+
+A protocol data unit is an amount or block of data transferred over a network.
+Different protocols or protocol layers refer to PDUs by different names.
+
+For example, at the Link/Data Link a PDU is known as a _frame_, at the Internet/
+Network layer it is known as a _packet_, at the Transport layer it is known as
+a segment (TCP) or _datagram_ (UDP).
+
+In all cases the basic concept is effectively the same, the PDU consists of a header,
+a data payload, and in some cases a trailer or footer.
