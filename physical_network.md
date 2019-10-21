@@ -24,7 +24,18 @@ Bandwidth is the _amount_ of data that can be sent at once.
 Just increasing the bandwidth doesn't necessarily improve the performance of a network.
 We'll explore the reasons for this when we look at TCP and UDP in a later lesson.
 
-## The Elements of Latency
+# The Elements of Latency
 
 We can think of latency as a measure of delay. There are different _types_ of
 delay that go together to determine the overall latency of a network connection.
+
+- *Propagation Delay*: this is the amount of time it takes for a message to travel
+from the sender to the receiver, and can be calculated as the ratio between distance
+and speed.
+
+- *transmission Delay*: the journey of data from point A to point B on a network
+typically won't be made over one single cable. Instead the data will travel across
+many different wires and cables, all inter-connected by switches, routers, and
+other network devices. Each of these elements within the network can be thought of
+as an individual 'link' within the overall system. Transmission delay is the amount
+of time it takes to push the data onto the link. 
