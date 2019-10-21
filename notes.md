@@ -104,3 +104,22 @@ a segment (TCP) or _datagram_ (UDP).
 
 In all cases the basic concept is effectively the same, the PDU consists of a header,
 a data payload, and in some cases a trailer or footer.
+
+## Header and Trailer
+
+The exact structure of the header and, if included, trailer varies from protocol to protocol,
+but the purpose of them is the same in each case: to provide protocol-specific meta-data about the PDU.
+
+For example, an Internet Protocol (IP) packet header would include fields for the Source IP Address and
+the Destination IP Address, which would be used to correctly route the packet.
+
+## Data Payload
+
+The data payload portion of a PDU is simply the data that we want to transport over
+the network using a specific protocol at a particular network layer.
+
+The data payload is the key to the way encapsulation is implemented. The entire PDU
+from a protocol at one layer is set as the data payload for a protocol as the layer below.
+
+For example, a HTTP request at the Application layer could be set as the payload
+for a TCP segment at the transport layer.
