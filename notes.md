@@ -1,4 +1,4 @@
-What is a network?
+# What is a network?
 
 At the most basic level, it's two devices connected in such a way that they can
 communicate or exchange data.
@@ -19,7 +19,7 @@ from laptops, tablets, and phones, to kettles, toasters, and lightbulbs
 We can think of a protocol as a system of rules. In terms of computer networks,
 we can be a bit more specific:
 
-A set of rules governing the exchange or transmission of data.
+"A set of rules governing the exchange or transmission of data."
 
 There are numerous different protocols that are used to communicate over the
 internet. A short list of some of the most widely used protocols might include
@@ -55,3 +55,34 @@ at the same time. We can maybe think of these as *message transfer rules* for ho
 speech is conducted.
 
 # Different Protocols for the Same Aspect of Communication
+
+You can probably think of various situations where different sets of message
+transfer rules are or aren't appropriate.
+
+- In a classroom situation, if a student wants to ask the teacher a question, we
+might have fairly strict rules for initiating and conducting the transfer of
+messages:
+
+1. Student raises hand.
+2. Teacher acknowledges student.
+3. Student asks question.
+4. Teacher answers question.
+
+- A different situation with less strictly defined rules might be a social
+conversation between friends. All the participants are peers with no hierarchy.
+Anyone can initiate a message exchange and anyone can respond.
+
+- Yet another situation might be someone giving a presentation at a conference.
+The speaker might start speaking at a specific set time, and should normally be
+allowed to deliver the presentation without interruption while the audience listens.
+
+All of these situations are concerned with the same aspect of communication, the flow
+and order of the message transfer, but use different sets of rules, or _protocols_.
+
+We can think of network communication protocols in the same way. TCP and UDP would
+be examples of 2 protocols that address the same basic aspect of communication, the
+transfer of messages between applications, but do so in different ways.
+
+TCP and HTTP would be examples of 2 protocols that address different aspects
+of communication; TCP is the transfer of messages between applications, and
+HTTP the structure of those messages.
