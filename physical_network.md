@@ -39,3 +39,10 @@ many different wires and cables, all inter-connected by switches, routers, and
 other network devices. Each of these elements within the network can be thought of
 as an individual 'link' within the overall system. Transmission delay is the amount
 of time it takes to push the data onto the link.
+
+- *Processing Delay*: Data travelling across the physical network doesn't directly cross
+from one link to another, but is processed in various ways. We'll look at what this processing
+entails in more details in a later assignment.
+
+- *Queuing Delay*: Network devices such as routers can only process a certain amount of data
+at one time. If there is more data than the device can handle, then it queues or buffers the data. 
