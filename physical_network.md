@@ -45,4 +45,4 @@ from one link to another, but is processed in various ways. We'll look at what t
 entails in more details in a later assignment.
 
 - *Queuing Delay*: Network devices such as routers can only process a certain amount of data
-at one time. If there is more data than the device can handle, then it queues or buffers the data. 
+at one time. If there is more data than the device can handle, then it queues or buffers the data.
