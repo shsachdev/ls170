@@ -76,3 +76,20 @@ referred to as a _socket_. We'll talk more about sockets later, but for now
 you can just think of them as the combination of IP address and port number;
 
 for example `216.3.128.12:8080`.
+
+# Sockets
+
+At a conceptual level, a socket is, as outlined above, an abstraction for an
+endpoint used for inter-process communication. At an implementation level it can
+be used to refer to different specific things:
+
+- UNIX socket: a mechanism for inter-process communication between local
+processes running on the same machine.
+
+- Internet sockets (such as TCP/IP socket): a mechanism for inter-process
+communication between networked processes (usually on different machines).
+
+At a conceptual level, a socket is a communication end-point defined by an
+address-port pair.
+
+Connectionless vs Connection-Oriented Networks Communication
