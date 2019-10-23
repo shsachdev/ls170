@@ -93,3 +93,9 @@ At a conceptual level, a socket is a communication end-point defined by an
 address-port pair.
 
 Connectionless vs Connection-Oriented Networks Communication
+
+# Network Reliability
+
+The possibility of losing data and it not being replaced means that the network
+up to and including the Internet Protocol is effectively an _unreliable_
+_communication_ _channel_.
