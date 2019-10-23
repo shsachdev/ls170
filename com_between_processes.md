@@ -54,3 +54,25 @@ also used for allocation as _ephemeral ports_ on the client side.
 - 49152-65535 are dynamic ports. Ports in this range cannot be registered for a
 specific use. They can be used for customized services or for allocation as
 ephemeral parts.
+
+So we can use ports to identify specific services running on host machines, but
+how does that help us with multiplexing and demultiplexing?
+
+The answer is that the source and destination port numbers are included in the
+Protocol Data Units (PDU) for the transport layer.
+
+Data from the application layer is encapsulated as the data payload in this PDU,
+and the source and destination port numbers within the PDU can be used to direct
+that data to specific processes on a host.
+
+The entire PDU is then encapsulated as the data payload in an IP packet. The IP
+addresses in the packet header can be used to direct data from one host to another.
+The IP Address and the port number _together_ are what enables end-to-end
+communication between specific applications on different machines.
+
+The combination of IP address and port number information can be thought of as
+defining a _communication_ _end_point_. This communication end_point is generally
+referred to as a _socket_. We'll talk more about sockets later, but for now
+you can just think of them as the combination of IP address and port number;
+
+for example `216.3.128.12:8080`.
