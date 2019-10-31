@@ -5,8 +5,7 @@ function server () {
   do
     read method path version
     if [[$method = "GET"]]
-    then
-      echo 'HTTP/1.1 200 OK'
+    if [[$path ]]
     else
       echo 'HTTP/1.1 400 Bad Request'
     fi
