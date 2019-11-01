@@ -1,13 +1,17 @@
 #!/bin/bash
 
 function server () {
+  path1 = "/tiger.html"
+  check1 = "./www/tiger.html"
   while true
   do
     read method path version
     if [[$method = "GET"]]
-    if [[$path ]]
-    else
+      if [[$path = path1 ]] &&
+    elsif [[$m]]
       echo 'HTTP/1.1 400 Bad Request'
+    else
+
     fi
   done
 }
