@@ -8,7 +8,7 @@ function server () {
     then
       if [[$path = '/tiger.html' && $path = '/lion.html' && $path = '/leopards.html' ]]
       then
-        echo 'HTTP/1.1 200 OK'
+        echo 'HTTP/1.1 200 OK'; cat ./www/$path
       fi
     else
       echo 'HTTP/1.1 400 Bad Request'
