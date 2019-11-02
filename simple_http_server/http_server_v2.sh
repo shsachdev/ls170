@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# copy pasted from answer key 
+# copy pasted from answer key
 
 function server () {
   while true
