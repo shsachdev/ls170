@@ -20,3 +20,6 @@ new_matrix3 = rotate90(rotate90(rotate90(rotate90(matrix2))))
 p new_matrix1 == [[3, 4, 1], [9, 7, 5], [6, 2, 8]]
 p new_matrix2 == [[5, 3], [1, 7], [0, 4], [8, 2]]
 p new_matrix3 == matrix2
+
+
+# Algorithm 
