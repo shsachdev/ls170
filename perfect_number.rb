@@ -20,4 +20,4 @@ class PerfectNumber
   end
 end
 
-# exercise complete 
+# exercise complete
